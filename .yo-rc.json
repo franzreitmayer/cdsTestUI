@@ -1,0 +1,22 @@
+{
+  "generator-template-ui5-project": {
+    "projectname": "oDataFromCDSTest",
+    "namespaceUI5": "reitmayer.eu",
+    "platform": "SAP NetWeaver",
+    "viewtype": "XML",
+    "ui5libs": "Local resources (SAPUI5)",
+    "newdir": true,
+    "codeassist": true,
+    "namespaceURI": "reitmayer/eu",
+    "opa5pos": [
+      "Main"
+    ],
+    "opa5Journeys": [
+      "Main"
+    ],
+    "uimodules": [
+      "uimodule"
+    ],
+    "setupCompleted": true
+  }
+}
