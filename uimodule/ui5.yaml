@@ -8,7 +8,7 @@ resources:
       webapp: uimodule/webapp
 framework:
   name: SAPUI5
-  version: 1.96.0
+  version: 1.76.0
   libraries:
     - name: sap.ui.core
     - name: sap.m
@@ -26,11 +26,11 @@ server:
       configuration:
         debug: false
         /sap/opu/odata/sap/:
-          target: http://<yourserver>:<yourserverport>
+          target: https://vhcala4hci.dummy.nodomain:50001/
           auth:
-            fromEnv: false
-            user: <youruser>
-            pass: <yourpassword>
+            fromEnv: true
+            user: DEVELOPER
+            pass: "#Hallo77"
 builder:
   customTasks:
   - name: ui5-task-nwabap-deployer
@@ -40,14 +40,14 @@ builder:
         path: dist/uimodule
         pattern: "**/*.*"
       connection:
-        server: http://<yourserver>:<yourserverport>
+        server: https://vhcala4hci.dummy.nodomain:50001/
       authentication:
-        user: <youruser>
-        password: <yourpassword>
+        user: DEVELOPER
+        password: "#Hallo77"
       ui5:
         language: EN
-        package: <yourpackage>
-        bspContainer: <yourbspapplication>
-        bspContainerText: Generated with easy-ui5
-        transportNo: <yourtransport>
+        package: ZTESTUI5
+        bspContainer: ZCDSSERVICE2
+        bspContainerText: Simple Service from CDS
+        transportNo: A4HK900059
         calculateApplicationIndex: true

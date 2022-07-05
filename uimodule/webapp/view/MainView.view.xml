@@ -1,5 +1,11 @@
 <mvc:View controllerName="reitmayer.eu.oDataFromCDSTest.controller.MainView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <content />
+        <content>
+            <List items="{/ZSFLIGHTSet}">
+                <StandardListItem
+			        title="{Carrid}"
+			        description="{Connid}" />
+            </List>
+        </content>
     </Page>
 </mvc:View>

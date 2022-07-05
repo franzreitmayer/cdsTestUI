@@ -13,6 +13,15 @@
     "sourceTemplate": {
       "id": "@sap-ux/fiori-freestyle-writer:basic",
       "version": "0.11.15"
+    },
+    "dataSources": {
+      "cdsData": {
+        "uri": "/sap/opu/odata/sap/ZMYSFLIGHT_SRV",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
     }
   },
   "sap.ui": {
@@ -45,6 +54,14 @@
       "cozy": true
     },
     "models": {
+      "": {
+        "dataSource": "cdsData",
+        "settings": {
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "refreshAfterChange": false
+        }
+      },
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
